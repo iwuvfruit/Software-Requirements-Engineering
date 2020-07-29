@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="young" created="November 25, 2019 10:06:37 PM EST" modified="November 25, 2019 10:07:44 PM EST" specVersion="8" urnVersion="1.27" nextGlobalID="764">
+  <ucmspec>
+    <scenarioGroups name="ForStakeholder" id="7">
+      <scenarios name="ForCustomer1" id="732">
+        <startPoints enabled="true" startPoint="123"/>
+        <startPoints enabled="true" startPoint="123"/>
+        <endPoints enabled="true" mandatory="true" endPoint="156"/>
+        <endPoints enabled="true" mandatory="true" endPoint="156"/>
+      </scenarios>
+      <scenarios name="ForStakeholder" id="734"/>
+      <scenarios name="ForCustomer2" id="760">
+        <startPoints enabled="true" startPoint="123"/>
+        <startPoints enabled="true" startPoint="123"/>
+        <endPoints enabled="true" mandatory="true" endPoint="178"/>
+        <endPoints enabled="true" mandatory="true" endPoint="178"/>
+      </scenarios>
+    </scenarioGroups>
+  </ucmspec>
+  <grlspec>
+    <intElements name="Developing an optimal system" id="17" linksDest="49 50" type="Goal" refs="18">
+      <metadata name="_numEval" value="27"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements name="Maxmimize the usage of the system via mobile" id="19" linksDest="51 52" linksSrc="49" type="Goal" refs="20">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="31"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements name="Maximize convenience for users" id="21" linksDest="61" linksSrc="51" type="Goal" refs="22">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="37"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements name="Increase Sales" id="23" linksDest="53 56" linksSrc="50" type="Goal" refs="24">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="24"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements name="Increase new customers" id="25" linksDest="730" linksSrc="56" type="Goal" refs="26">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements name="Increase repeated Custmomers" id="27" linksDest="60" linksSrc="53" type="Goal" refs="28">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements name="Benefit store owners" id="29" linksDest="67" linksSrc="52" type="Goal" refs="30">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="18"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements name="Maxmize size of database on user info" id="33" linksDest="727 728 740" linksSrc="60 61" type="Goal" refs="34">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="50"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements name="Minimize one time customers" id="35" linksDest="729" linksSrc="67" type="Goal" refs="36">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="AddProfileInformation" id="81" linksSrc="728" type="Task" refs="726">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="AddPurchaseHistory" id="83" linksSrc="727" type="Task" refs="639">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="GetEatonPoints" id="347" linksSrc="729 730" type="Task" refs="547">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="No Profile" id="736" linksSrc="740" type="Task" importance="High" importanceQuantitative="100" refs="737">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <actors name="Developers" id="13" contRefs="14" importance="High" importanceQuantitative="75">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </actors>
+    <links xsi:type="grl:Contribution" name="Contribution49" id="49" refs="//@urndef/@specDiagrams.0/@connections.0" dest="17" src="19" contribution="SomePositive" quantitativeContribution="50"/>
+    <links xsi:type="grl:Contribution" name="Contribution50" id="50" refs="//@urndef/@specDiagrams.0/@connections.1" dest="17" src="23" contribution="SomePositive" quantitativeContribution="50"/>
+    <links xsi:type="grl:Contribution" name="Contribution51" id="51" refs="//@urndef/@specDiagrams.0/@connections.2" dest="19" src="21" contribution="SomePositive" quantitativeContribution="75"/>
+    <links xsi:type="grl:Contribution" name="Contribution52" id="52" refs="//@urndef/@specDiagrams.0/@connections.3" dest="19" src="29"/>
+    <links xsi:type="grl:Contribution" name="Contribution53" id="53" refs="//@urndef/@specDiagrams.0/@connections.4" dest="23" src="27" contribution="SomePositive" quantitativeContribution="75"/>
+    <links xsi:type="grl:Contribution" name="Contribution56" id="56" refs="//@urndef/@specDiagrams.0/@connections.5" dest="23" src="25"/>
+    <links xsi:type="grl:Contribution" name="Contribution60" id="60" refs="//@urndef/@specDiagrams.0/@connections.6" dest="27" src="33" contribution="SomePositive" quantitativeContribution="50"/>
+    <links xsi:type="grl:Contribution" name="Contribution61" id="61" refs="//@urndef/@specDiagrams.0/@connections.7" dest="21" src="33" contribution="SomePositive" quantitativeContribution="75"/>
+    <links xsi:type="grl:Contribution" name="Contribution67" id="67" refs="//@urndef/@specDiagrams.0/@connections.8" dest="29" src="35" contribution="SomePositive" quantitativeContribution="75"/>
+    <links xsi:type="grl:Contribution" name="Contribution727" id="727" refs="//@urndef/@specDiagrams.0/@connections.9" dest="33" src="83"/>
+    <links xsi:type="grl:Contribution" name="Contribution728" id="728" refs="//@urndef/@specDiagrams.0/@connections.10" dest="33" src="81"/>
+    <links xsi:type="grl:Contribution" name="Contribution729" id="729" refs="//@urndef/@specDiagrams.0/@connections.11" dest="35" src="347"/>
+    <links xsi:type="grl:Contribution" name="Contribution730" id="730" refs="//@urndef/@specDiagrams.0/@connections.12" dest="25" src="347"/>
+    <links xsi:type="grl:Contribution" name="Contribution740" id="740" refs="//@urndef/@specDiagrams.0/@connections.13" dest="33" src="736" contribution="SomeNegative" quantitativeContribution="-75"/>
+    <groups name="ForStakeholder" id="5" strategies="735 763"/>
+    <strategies name="Old System" id="735" author="young" group="5">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="736">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="New System" id="763" author="young" group="5">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="83">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="81">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="347">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <impactModel/>
+    <indicatorGroup name="Time" id="9" isRedesignCategory="true"/>
+    <indicatorGroup name="Cost" id="10" isRedesignCategory="true"/>
+    <indicatorGroup name="Quality" id="11" isRedesignCategory="true"/>
+    <indicatorGroup name="Flexibility" id="12" isRedesignCategory="true"/>
+    <featureModel/>
+  </grlspec>
+  <urndef>
+    <responsibilities name="Enter mall" id="138" respRefs="139"/>
+    <responsibilities name="take the fastest route" id="146" respRefs="147"/>
+    <responsibilities name="ViewStoreInfo" id="164" description="" expression="" respRefs="165"/>
+    <responsibilities name="accept store name" id="184" respRefs="185"/>
+    <responsibilities name="Check store name" id="190" respRefs="191"/>
+    <specDiagrams xsi:type="grl:GRLGraph" name="Goal" id="2">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef18" id="18" x="456" y="52" contRef="14" pred="//@urndef/@specDiagrams.0/@connections.0 //@urndef/@specDiagrams.0/@connections.1" def="17">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="290"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef20" id="20" x="310" y="135" succ="//@urndef/@specDiagrams.0/@connections.0" pred="//@urndef/@specDiagrams.0/@connections.2 //@urndef/@specDiagrams.0/@connections.3" def="19">
+        <metadata name="_height" value="64"/>
+        <metadata name="_width" value="249"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef22" id="22" x="242" y="270" succ="//@urndef/@specDiagrams.0/@connections.2" pred="//@urndef/@specDiagrams.0/@connections.7" def="21">
+        <metadata name="_height" value="62"/>
+        <metadata name="_width" value="183"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef24" id="24" x="648" y="144" succ="//@urndef/@specDiagrams.0/@connections.1" pred="//@urndef/@specDiagrams.0/@connections.4 //@urndef/@specDiagrams.0/@connections.5" def="23">
+        <metadata name="_height" value="57"/>
+        <metadata name="_width" value="216"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef26" id="26" x="815" y="281" succ="//@urndef/@specDiagrams.0/@connections.5" pred="//@urndef/@specDiagrams.0/@connections.12" def="25">
+        <metadata name="_height" value="75"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef28" id="28" x="675" y="273" succ="//@urndef/@specDiagrams.0/@connections.4" pred="//@urndef/@specDiagrams.0/@connections.6" def="27">
+        <metadata name="_height" value="81"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef30" id="30" x="462" y="272" succ="//@urndef/@specDiagrams.0/@connections.3" pred="//@urndef/@specDiagrams.0/@connections.8" def="29">
+        <metadata name="_height" value="68"/>
+        <metadata name="_width" value="159"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef34" id="34" x="374" y="400" contRef="14" succ="//@urndef/@specDiagrams.0/@connections.6 //@urndef/@specDiagrams.0/@connections.7" pred="//@urndef/@specDiagrams.0/@connections.9 //@urndef/@specDiagrams.0/@connections.10 //@urndef/@specDiagrams.0/@connections.13" def="33">
+        <metadata name="_height" value="90"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef36" id="36" x="608" y="387" contRef="14" succ="//@urndef/@specDiagrams.0/@connections.8" pred="//@urndef/@specDiagrams.0/@connections.11" def="35">
+        <metadata name="_height" value="102"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef547" id="547" x="589" y="532" contRef="14" succ="//@urndef/@specDiagrams.0/@connections.11 //@urndef/@specDiagrams.0/@connections.12" def="347">
+        <metadata name="_height" value="70"/>
+        <metadata name="_width" value="130"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef639" id="639" x="194" y="457" contRef="14" succ="//@urndef/@specDiagrams.0/@connections.9" def="83">
+        <metadata name="_height" value="88"/>
+        <metadata name="_width" value="166"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef726" id="726" x="386" y="524" contRef="14" succ="//@urndef/@specDiagrams.0/@connections.10" def="81">
+        <metadata name="_height" value="61"/>
+        <metadata name="_width" value="170"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef737" id="737" x="113" y="367" contRef="14" succ="//@urndef/@specDiagrams.0/@connections.13" def="736">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef14" id="14" x="-6" y="31" width="1187" height="586" contDef="13" nodes="18 34 36 547 639 726 737">
+        <label deltaX="-141" deltaY="-58"/>
+      </contRefs>
+      <connections xsi:type="grl:LinkRef" source="20" target="18" link="49">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="24" target="18" link="50">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="22" target="20" link="51">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="30" target="20" link="52">
+        <label deltaX="-13" deltaY="-45"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="28" target="24" link="53">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="26" target="24" link="56">
+        <label deltaX="-26" deltaY="-75"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="34" target="28" link="60">
+        <label deltaX="-15" deltaY="-163"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="34" target="22" link="61">
+        <label deltaX="-13" deltaY="-52"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="36" target="30" link="67">
+        <label deltaX="-24" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="639" target="34" link="727">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="726" target="34" link="728">
+        <label deltaX="-39" deltaY="-15"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="547" target="36" link="729">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="547" target="26" link="730">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="737" target="34" link="740">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+    </specDiagrams>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="ForStakeholder" id="3">
+      <nodes xsi:type="ucm.map:StartPoint" name="ready to shop" id="123" x="174" y="302" succ="//@urndef/@specDiagrams.1/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.2/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.2/@startPoints.1 //@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.1">
+        <metadata name="_hits" value="2"/>
+        <label/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="in the store" id="125" x="974" y="308" pred="//@urndef/@specDiagrams.1/@connections.3">
+        <metadata name="_hits" value="2"/>
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef139" id="139" x="320" y="291" contRef="131" succ="//@urndef/@specDiagrams.1/@connections.1" pred="//@urndef/@specDiagrams.1/@connections.0" respDef="138">
+        <metadata name="_hits" value="2"/>
+        <label/>
+      </nodes>
+      <nodes xsi:type="ucm.map:Stub" name="SearchStore" id="144" x="568" y="306" contRef="133" succ="//@urndef/@specDiagrams.1/@connections.2" pred="//@urndef/@specDiagrams.1/@connections.1" dynamic="true">
+        <metadata name="_hits" value="2"/>
+        <label/>
+        <bindings plugin="152">
+          <in startPoint="154" stubEntry="//@urndef/@specDiagrams.1/@connections.1"/>
+          <out endPoint="156" stubExit="//@urndef/@specDiagrams.1/@connections.2"/>
+          <precondition label="" expression="true"/>
+        </bindings>
+        <bindings plugin="153">
+          <in startPoint="176" stubEntry="//@urndef/@specDiagrams.1/@connections.1"/>
+          <out endPoint="178" stubExit="//@urndef/@specDiagrams.1/@connections.2"/>
+          <precondition label="" expression="true"/>
+        </bindings>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef147" id="147" x="826" y="307" contRef="135" succ="//@urndef/@specDiagrams.1/@connections.3" pred="//@urndef/@specDiagrams.1/@connections.2" respDef="146">
+        <metadata name="_hits" value="2"/>
+        <label/>
+      </nodes>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef131" id="131" x="269" y="202" width="104" height="179" contDef="130" nodes="139">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef133" id="133" x="523" y="244" width="100" height="100" contDef="132" nodes="144">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef135" id="135" x="781" y="255" width="100" height="100" contDef="134" nodes="147">
+        <label/>
+      </contRefs>
+      <connections xsi:type="ucm.map:NodeConnection" source="123" target="139"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="139" target="144" inBindings="//@urndef/@specDiagrams.1/@nodes.3/@bindings.0/@in.0 //@urndef/@specDiagrams.1/@nodes.3/@bindings.1/@in.0"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="144" target="147" outBindings="//@urndef/@specDiagrams.1/@nodes.3/@bindings.0/@out.0 //@urndef/@specDiagrams.1/@nodes.3/@bindings.1/@out.0"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="147" target="125"/>
+      <comments description="Customer: An International Student looking for shops to buy winter clothes. The student enters the mall, the students browse stores in two ways using the system.&#xD;&#xA;The system has SearchStore features, and under there it has XOR: ViewStoreInfo and GetStoreDirection.&#xD;&#xA;International Students who aren't familiar with the stores in Canada browse the store informations. if they know the name of the store, they get to the store with the fastest route using GetStoreDirectioon feature " x="124" y="390" width="461" height="267" fillColor="255,255,200"/>
+    </specDiagrams>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="ViewStoreInfo" id="152" parentStub="//@urndef/@specDiagrams.1/@nodes.3/@bindings.0">
+      <nodes xsi:type="ucm.map:StartPoint" name="ready to use the system to look for the shop I need to go" id="154" x="274" y="271" succ="//@urndef/@specDiagrams.2/@connections.0" inBindings="//@urndef/@specDiagrams.1/@nodes.3/@bindings.0/@in.0">
+        <metadata name="_hits" value="2"/>
+        <label deltaX="-29" deltaY="-2"/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="I know where to go" id="156" x="858" y="276" pred="//@urndef/@specDiagrams.2/@connections.1" outBindings="//@urndef/@specDiagrams.1/@nodes.3/@bindings.0/@out.0" scenarioEndPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@endPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.0/@endPoints.1">
+        <metadata name="_hits" value="2"/>
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef165" id="165" x="579" y="280" contRef="161" succ="//@urndef/@specDiagrams.2/@connections.1" pred="//@urndef/@specDiagrams.2/@connections.0" respDef="164">
+        <metadata name="_hits" value="2"/>
+        <label/>
+      </nodes>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef161" id="161" x="207" y="157" width="794" height="216" contDef="132" nodes="165">
+        <label/>
+      </contRefs>
+      <connections xsi:type="ucm.map:NodeConnection" source="154" target="165"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="165" target="156"/>
+    </specDiagrams>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="GetStoreDirection" id="153" parentStub="//@urndef/@specDiagrams.1/@nodes.3/@bindings.1">
+      <nodes xsi:type="ucm.map:StartPoint" name="I know the shop I want to go" id="176" x="211" y="294" contRef="171" succ="//@urndef/@specDiagrams.3/@connections.0" inBindings="//@urndef/@specDiagrams.1/@nodes.3/@bindings.1/@in.0">
+        <metadata name="_hits" value="0"/>
+        <label deltaX="-26" deltaY="9"/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint177" id="177" x="544" y="295" contRef="171" succ="//@urndef/@specDiagrams.3/@connections.1" pred="//@urndef/@specDiagrams.3/@connections.2">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="provide the fastest route to take" id="178" x="920" y="287" contRef="171" pred="//@urndef/@specDiagrams.3/@connections.9" outBindings="//@urndef/@specDiagrams.1/@nodes.3/@bindings.1/@out.0" scenarioEndPoints="//@ucmspec/@scenarioGroups.0/@scenarios.2/@endPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.2/@endPoints.1">
+        <metadata name="_hits" value="0"/>
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef185" id="185" x="483" y="294" contRef="181" succ="//@urndef/@specDiagrams.3/@connections.2" pred="//@urndef/@specDiagrams.3/@connections.12" respDef="184">
+        <metadata name="_hits" value="0"/>
+        <label deltaX="-22" deltaY="1"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef191" id="191" x="616" y="289" contRef="181" succ="//@urndef/@specDiagrams.3/@connections.3" pred="//@urndef/@specDiagrams.3/@connections.1" respDef="190">
+        <metadata name="_hits" value="0"/>
+        <label deltaX="-48" deltaY="-4"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork283" id="283" x="780" y="289" contRef="171" succ="//@urndef/@specDiagrams.3/@connections.4 //@urndef/@specDiagrams.3/@connections.5" pred="//@urndef/@specDiagrams.3/@connections.3">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint284" id="284" x="540" y="404" contRef="171" succ="//@urndef/@specDiagrams.3/@connections.6" pred="//@urndef/@specDiagrams.3/@connections.8">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:OrJoin" name="OrJoin307" id="307" x="351" y="296" contRef="171" succ="//@urndef/@specDiagrams.3/@connections.7" pred="//@urndef/@specDiagrams.3/@connections.11 //@urndef/@specDiagrams.3/@connections.10">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow316" id="316" x="673" y="348" contRef="171" succ="//@urndef/@specDiagrams.3/@connections.8" pred="//@urndef/@specDiagrams.3/@connections.5">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow317" id="317" x="806" y="289" contRef="171" succ="//@urndef/@specDiagrams.3/@connections.9" pred="//@urndef/@specDiagrams.3/@connections.4">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow318" id="318" x="465" y="368" contRef="171" succ="//@urndef/@specDiagrams.3/@connections.10" pred="//@urndef/@specDiagrams.3/@connections.6">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow319" id="319" x="316" y="294" contRef="171" succ="//@urndef/@specDiagrams.3/@connections.11" pred="//@urndef/@specDiagrams.3/@connections.0">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow320" id="320" x="377" y="297" contRef="171" succ="//@urndef/@specDiagrams.3/@connections.12" pred="//@urndef/@specDiagrams.3/@connections.7">
+        <metadata name="_hits" value="0"/>
+      </nodes>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef171" id="171" x="153" y="164" width="827" height="259" contDef="132" nodes="176 177 178 283 284 307 316 317 318 319 320" children="181">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef181" id="181" x="425" y="258" width="273" height="82" contDef="180" nodes="185 191" parent="171">
+        <label deltaX="-6" deltaY="17"/>
+      </contRefs>
+      <connections xsi:type="ucm.map:NodeConnection" source="176" target="319"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="177" target="191"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="185" target="177"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="191" target="283"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="283" target="317">
+        <condition deltaX="53" deltaY="46" label="matched" expression="true" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="283" target="316">
+        <condition deltaX="30" deltaY="-17" label="not matched" expression="true" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="284" target="318"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="307" target="320"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="316" target="284"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="317" target="178"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="318" target="307"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="319" target="307"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="320" target="185"/>
+      <comments description="the student enters the name of the mall, if it's matched it provides fastest route. otherwise it pops up again so the student can type store name again" x="884" y="383" width="356" height="171" fillColor="255,255,200"/>
+    </specDiagrams>
+    <components name="Mall" id="130" contRefs="131"/>
+    <components name="Browse stores" id="132" contRefs="133 161 171"/>
+    <components name="Head to the store" id="134" contRefs="135"/>
+    <components name="Component160" id="160" kind="Agent"/>
+    <components name="Component170" id="170"/>
+    <components name="GetStoreDirection" id="180" contRefs="181"/>
+  </urndef>
+  <metadata name="_Use0to100EvaluationRange" value="false"/>
+</urn:URNspec>

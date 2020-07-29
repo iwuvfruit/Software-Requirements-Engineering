@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="jay" created="November 10, 2019 8:30:01 PM EST" modified="November 10, 2019 11:48:14 PM EST" specVersion="14" urnVersion="1.27" nextGlobalID="100">
+  <ucmspec>
+    <scenarioGroups name="ScenarioGroup6" id="6">
+      <scenarios name="ScenarioDef7" id="7"/>
+    </scenarioGroups>
+  </ucmspec>
+  <grlspec>
+    <intElements xsi:type="fm:Feature" name="RecommendPartneringMalls" id="28" linksSrc="90 91" type="Task" refs="29">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="BuyGiftCard" id="30" linksDest="81" linksSrc="72" type="Task" refs="31">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="EatonSystem" id="32" linksDest="61 70 72 74 93 95" type="Task" refs="33">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="ViewMap" id="34" linksSrc="95" type="Task" refs="35">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20191110-233424885"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="GetStoreDirection" id="36" linksSrc="66" type="Task" refs="37">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="CreateProfile" id="38" linksDest="75 76 78" linksSrc="74" type="Task" refs="39">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20191110-233424885"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="PayGiftCard" id="40" linksDest="91" linksSrc="68" type="Task" refs="41">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="AddPreferredMalls" id="42" linksDest="80" linksSrc="78" type="Task" refs="43">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="AddProfileInformation" id="44" linksSrc="75" type="Task" refs="45">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20191110-233424885"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="GetWeeklyDiscount" id="46" linksSrc="61" type="Task" refs="47">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="SearchStore" id="48" linksDest="65 66" linksSrc="93" type="Task" decompositionType="Xor" refs="49">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20191110-233424885"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="ViewStoreInfo" id="50" linksSrc="65" type="Task" refs="51">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="GetEatonPoints" id="52" linksSrc="80 81" type="Task" refs="53">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="PayEatonPoints" id="54" linksDest="90" linksSrc="67" type="Task" refs="55">
+      <metadata name="_userSetEvaluationWarning" value="100 != 0"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="PayForItem" id="56" linksDest="67 68" linksSrc="70" type="Task" decompositionType="Xor" refs="57">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20191110-233424885"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="AddPurchaseHistory" id="58" linksSrc="76" type="Task" refs="59">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20191110-233424885"/>
+    </intElements>
+    <links xsi:type="fm:OptionalFMLink" name="Optional61" id="61" refs="//@urndef/@specDiagrams.0/@connections.0" dest="32" src="46" quantitativeContribution="0"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition65" id="65" refs="//@urndef/@specDiagrams.0/@connections.1" dest="48" src="50"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition66" id="66" refs="//@urndef/@specDiagrams.0/@connections.2" dest="48" src="36"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition67" id="67" refs="//@urndef/@specDiagrams.0/@connections.3" dest="56" src="54"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition68" id="68" refs="//@urndef/@specDiagrams.0/@connections.4" dest="56" src="40"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory70" id="70" refs="//@urndef/@specDiagrams.0/@connections.5" dest="32" src="56"/>
+    <links xsi:type="fm:OptionalFMLink" name="Optional72" id="72" refs="//@urndef/@specDiagrams.0/@connections.6" dest="32" src="30" quantitativeContribution="0"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory74" id="74" refs="//@urndef/@specDiagrams.0/@connections.7" dest="32" src="38"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory75" id="75" refs="//@urndef/@specDiagrams.0/@connections.8" dest="38" src="44" quantitativeContribution="50"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory76" id="76" refs="//@urndef/@specDiagrams.0/@connections.9" dest="38" src="58" quantitativeContribution="50"/>
+    <links xsi:type="fm:OptionalFMLink" name="Optional78" id="78" refs="//@urndef/@specDiagrams.0/@connections.10" dest="38" src="42" quantitativeContribution="0"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory80" id="80" refs="//@urndef/@specDiagrams.0/@connections.11" dest="42" src="52" quantitativeContribution="100"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory81" id="81" refs="//@urndef/@specDiagrams.0/@connections.12" dest="30" src="52" quantitativeContribution="100"/>
+    <links xsi:type="fm:OptionalFMLink" name="Optional90" id="90" refs="//@urndef/@specDiagrams.0/@connections.13" dest="54" src="28" quantitativeContribution="100"/>
+    <links xsi:type="fm:OptionalFMLink" name="Optional91" id="91" refs="//@urndef/@specDiagrams.0/@connections.14" dest="40" src="28" quantitativeContribution="100"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory93" id="93" refs="//@urndef/@specDiagrams.0/@connections.15" dest="32" src="48"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory95" id="95" refs="//@urndef/@specDiagrams.0/@connections.16" dest="32" src="34"/>
+    <groups name="StrategiesGroup4" id="4" strategies="5 86 89 97 98 100"/>
+    <strategies name="InternationalStudent_Younggue_Kim" id="5" description="International Students looking for winter clothes, wantint to use the system to find the shops that have good deals. " author="jay" group="4">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="38">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="58">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="44">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="48">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="50">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="ElderlyShopper_Jay_Abi-Saad" id="86" description="Configuration:&#xD;&#xA;ViewMap = 100&#xD;&#xA;SearchStore = 100&#xD;&#xA;ViewStoreInfo = 100&#xD;&#xA;GetStoreDirection = 100" author="jay" group="4">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="36">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="50">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="34">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="BlindShopper_Ketan_Rampurkar" id="89" description="Configuration:&#xD;&#xA;StoreDirection = 100&#xD;&#xA;PayEatonPoints = 100&#xD;&#xA;AddProfileInformation = 100&#xD;&#xA;GetWeeklyDiscount = 100" author="Ketan" group="4">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="36">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="46">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="54">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="Metro Commuter_Misha_Jehangir" id="97" description="This person passes through the mall almost daily but is not neccessarily a customer. They are not too familiar with the layout of the mall since they only take one straight shortest path to the metro station. They are in a rush usually so they don't pay attention to offers displayed on stores' windows." author="young" group="4">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="46">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="48">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="36">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="34">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="BargainHunter_Sean_Smith" id="98" author="young" group="4">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="54">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="52">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="38">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="44">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="Shopaholic_PaulAttara" id="100" description="A shopaholic is a shopper that tends to visit the mall a lot and buy a lot of products, earning a lot of Eaton points and taking advantage of the points by often redeeming them to buy more items at a store.&#xA;PayForItem: 100&#xA;PayEatonPoints: 100&#xA;SearchStore: 100&#xA;ViewStoreInfo: 100" author="paulattara" group="4">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="54">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="50">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <impactModel/>
+    <indicatorGroup name="Time" id="8" isRedesignCategory="true"/>
+    <indicatorGroup name="Cost" id="9" isRedesignCategory="true"/>
+    <indicatorGroup name="Quality" id="10" isRedesignCategory="true"/>
+    <indicatorGroup name="Flexibility" id="11" isRedesignCategory="true"/>
+    <featureModel/>
+  </grlspec>
+  <urndef>
+    <specDiagrams xsi:type="fm:FeatureDiagram" name="FeatureDiagram3" id="3" description="A bargain hunter is a shopper who is actively looking for the best deals on the market.&#xD;&#xA;Hopefully this person will use the app and its' features to come to the Eaton Center more&#xD;&#xA;often in search of great deals.&#xD;&#xA;This person has a lot of potential to increase the profit of the mall as a whole and can&#xD;&#xA;kept as a loyal customer through the use of a profile and a points system.&#xD;&#xA;">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef29" id="29" x="478" y="349" succ="//@urndef/@specDiagrams.0/@connections.13 //@urndef/@specDiagrams.0/@connections.14" def="28">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="145"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef31" id="31" x="661" y="181" succ="//@urndef/@specDiagrams.0/@connections.6" pred="//@urndef/@specDiagrams.0/@connections.12" def="30">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef33" id="33" x="355" y="74" pred="//@urndef/@specDiagrams.0/@connections.0 //@urndef/@specDiagrams.0/@connections.5 //@urndef/@specDiagrams.0/@connections.6 //@urndef/@specDiagrams.0/@connections.7 //@urndef/@specDiagrams.0/@connections.15 //@urndef/@specDiagrams.0/@connections.16" def="32">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef35" id="35" x="153" y="171" succ="//@urndef/@specDiagrams.0/@connections.16" def="34">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef37" id="37" x="318" y="267" succ="//@urndef/@specDiagrams.0/@connections.2" def="36">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef39" id="39" x="910" y="181" succ="//@urndef/@specDiagrams.0/@connections.7" pred="//@urndef/@specDiagrams.0/@connections.8 //@urndef/@specDiagrams.0/@connections.9 //@urndef/@specDiagrams.0/@connections.10" def="38">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef41" id="41" x="556" y="267" succ="//@urndef/@specDiagrams.0/@connections.4" pred="//@urndef/@specDiagrams.0/@connections.14" def="40">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef43" id="43" x="758" y="288" succ="//@urndef/@specDiagrams.0/@connections.10" pred="//@urndef/@specDiagrams.0/@connections.11" def="42">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef45" id="45" x="872" y="288" succ="//@urndef/@specDiagrams.0/@connections.8" def="44">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="122"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef47" id="47" x="17" y="170" succ="//@urndef/@specDiagrams.0/@connections.0" def="46">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef49" id="49" x="272" y="171" succ="//@urndef/@specDiagrams.0/@connections.15" pred="//@urndef/@specDiagrams.0/@connections.1 //@urndef/@specDiagrams.0/@connections.2" def="48">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef51" id="51" x="206" y="267" succ="//@urndef/@specDiagrams.0/@connections.1" def="50">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef53" id="53" x="658" y="351" succ="//@urndef/@specDiagrams.0/@connections.11 //@urndef/@specDiagrams.0/@connections.12" def="52">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef55" id="55" x="433" y="266" succ="//@urndef/@specDiagrams.0/@connections.3" pred="//@urndef/@specDiagrams.0/@connections.13" def="54">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef57" id="57" x="495" y="176" succ="//@urndef/@specDiagrams.0/@connections.5" pred="//@urndef/@specDiagrams.0/@connections.3 //@urndef/@specDiagrams.0/@connections.4" def="56">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef59" id="59" x="996" y="288" succ="//@urndef/@specDiagrams.0/@connections.9" def="58">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="114"/>
+      </nodes>
+      <connections xsi:type="grl:LinkRef" source="47" target="33" link="61">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="51" target="49" link="65"/>
+      <connections xsi:type="grl:LinkRef" source="37" target="49" link="66"/>
+      <connections xsi:type="grl:LinkRef" source="55" target="57" link="67"/>
+      <connections xsi:type="grl:LinkRef" source="41" target="57" link="68"/>
+      <connections xsi:type="grl:LinkRef" source="57" target="33" link="70">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="31" target="33" link="72">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="39" target="33" link="74">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="45" target="39" link="75">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="59" target="39" link="76">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="43" target="39" link="78">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="53" target="43" link="80">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="53" target="31" link="81">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="29" target="55" link="90">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="29" target="41" link="91">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="49" target="33" link="93">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="35" target="33" link="95">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+    </specDiagrams>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="UCMmap2" id="2"/>
+  </urndef>
+  <metadata name="_Use0to100EvaluationRange" value="false"/>
+</urn:URNspec>
